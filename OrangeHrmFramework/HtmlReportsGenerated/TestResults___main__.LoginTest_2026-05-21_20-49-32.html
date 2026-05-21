@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2026-05-21 20:49:32</p>
+                <p class='attribute'><strong>Duration: </strong>8.06 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 1, Pass: 0, Error: 1</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.LoginTest</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_loginPage</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>Testing started
+OrangeHRM
+</p><p style="color:maroon;">InvalidArgumentException: Message: invalid argument: 'using' must be a string
+  (Session info: chrome=148.0.7778.179)
+Stacktrace:
+0   chromedriver                        0x000000010da3eec8 chromedriver + 6856392
+1   chromedriver                        0x000000010da3653a chromedriver + 6821178
+2   chromedriver                        0x000000010d423a85 chromedriver + 453253
+3   chromedriver                        0x000000010d477621 chromedriver + 796193
+4   chromedriver                        0x000000010d477b91 chromedriver + 797585
+5   chromedriver                        0x000000010d4c3684 chromedriver + 1107588
+6   chromedriver                        0x000000010d4c0786 chromedriver + 1095558
+7   chromedriver                        0x000000010d46aef1 chromedriver + 745201
+8   chromedriver                        0x000000010d46bcf1 chromedriver + 748785
+9   chromedriver                        0x000000010d9f64e7 chromedriver + 6558951
+10  chromedriver                        0x000000010d9fa896 chromedriver + 6576278
+11  chromedriver                        0x000000010d9d64fa chromedriver + 6427898
+12  chromedriver                        0x000000010d9fb308 chromedriver + 6578952
+13  chromedriver                        0x000000010d9c5990 chromedriver + 6359440
+14  chromedriver                        0x000000010da22bd8 chromedriver + 6740952
+15  chromedriver                        0x000000010da22d6c chromedriver + 6741356
+16  chromedriver                        0x000000010da36151 chromedriver + 6820177
+17  libsystem_pthread.dylib             0x00007ff803609e05 _pthread_start + 115
+18  libsystem_pthread.dylib             0x00007ff803605857 thread_start + 15
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "/Users/anusha/Documents/SeleniumPython2026/OrangeHrmFramework/POMFramework/Tests/loginTest.py", line 35, in test_loginPage
+    home.click_welcome()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "/Users/anusha/Documents/SeleniumPython2026/OrangeHrmFramework/POMFramework/Pages/homePage.py", line 11, in click_welcome
+    self.driver.find_element(self.welcome_link).click()
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "/Users/anusha/Documents/SeleniumPython2026/.venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 868, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/anusha/Documents/SeleniumPython2026/.venv/lib/python3.14/site-packages/selenium/webdriver/remote/webdriver.py", line 468, in execute
+    self.error_handler.check_response(response)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+  File "/Users/anusha/Documents/SeleniumPython2026/.venv/lib/python3.14/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidArgumentException: Message: invalid argument: 'using' must be a string
+  (Session info: chrome=148.0.7778.179)
+Stacktrace:
+0   chromedriver                        0x000000010da3eec8 chromedriver + 6856392
+1   chromedriver                        0x000000010da3653a chromedriver + 6821178
+2   chromedriver                        0x000000010d423a85 chromedriver + 453253
+3   chromedriver                        0x000000010d477621 chromedriver + 796193
+4   chromedriver                        0x000000010d477b91 chromedriver + 797585
+5   chromedriver                        0x000000010d4c3684 chromedriver + 1107588
+6   chromedriver                        0x000000010d4c0786 chromedriver + 1095558
+7   chromedriver                        0x000000010d46aef1 chromedriver + 745201
+8   chromedriver                        0x000000010d46bcf1 chromedriver + 748785
+9   chromedriver                        0x000000010d9f64e7 chromedriver + 6558951
+10  chromedriver                        0x000000010d9fa896 chromedriver + 6576278
+11  chromedriver                        0x000000010d9d64fa chromedriver + 6427898
+12  chromedriver                        0x000000010d9fb308 chromedriver + 6578952
+13  chromedriver                        0x000000010d9c5990 chromedriver + 6359440
+14  chromedriver                        0x000000010da22bd8 chromedriver + 6740952
+15  chromedriver                        0x000000010da22d6c chromedriver + 6741356
+16  chromedriver                        0x000000010da36151 chromedriver + 6820177
+17  libsystem_pthread.dylib             0x00007ff803609e05 _pthread_start + 115
+18  libsystem_pthread.dylib             0x00007ff803605857 thread_start + 15
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 1, Pass: 0, Error: 1 -- Duration: 8.06 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
